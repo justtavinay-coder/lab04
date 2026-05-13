@@ -3,9 +3,12 @@
 
 int main()
 {
+// Read a user name from standard input.
 std::string name;
 std::cout<<"Enter your name: ";
 std::cin>>name;
+
+// Print a personalized greeting.
 std::cout<<"Hello world from "<<name<<std::endl;
 return 0;
 }

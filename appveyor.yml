@@ -1,0 +1,17 @@
+image: Visual Studio 2022
+
+platform:
+  - x64
+
+configuration:
+  - Release
+
+before_build:
+  - cmake -S . -B _build
+
+build_script:
+  - cmake --build _build --config Release
+
+test_script:
+  - .\_build\hello_world_application\Release\hello_world.exe
+  - echo 1 0 -1 | .\_build\solver_application\Release\solver.exe

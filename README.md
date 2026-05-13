@@ -1,18 +1,20 @@
-# Лабораторная работа №3
+# Лабораторная работа №4
 
-## Задание 1
+[![CI](https://github.com/justtavinay-coder/lab04/actions/workflows/cicd.yml/badge.svg)](https://github.com/justtavinay-coder/lab04/actions/workflows/cicd.yml)
 
-В директории [`formatter_lib`](formatter_lib) создан [`CMakeLists.txt`](formatter_lib/CMakeLists.txt), который собирает статическую библиотеку `formatter`.
+## Задание
 
-## Задание 2
+Настроена непрерывная интеграция для проекта из лабораторной работы №3.
 
-В директории [`formatter_ex`](formatter_ex) создан [`CMakeLists.txt`](formatter_ex/CMakeLists.txt), который собирает статическую библиотеку `formatter_ex` и связывает ее с библиотекой `formatter`.
+## CI
 
-## Задание 3
+Сборка выполняется для:
 
-Созданы `CMakeLists.txt` для приложений:
+- Linux: `gcc`, `clang`;
+- Windows: MSVC.
 
-- [`hello_world`](hello_world_application/CMakeLists.txt), которое использует `formatter_ex`;
-- [`solver`](solver_application/CMakeLists.txt), которое использует `formatter_ex` и `solver_lib`.
+Конфигурации:
 
-Корневой [`CMakeLists.txt`](CMakeLists.txt) подключает все подпроекты.
+- [GitHub Actions](.github/workflows/cicd.yml)
+- [Travis CI](.travis.yml)
+- [AppVeyor](appveyor.yml)

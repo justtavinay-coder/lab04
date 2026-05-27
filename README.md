@@ -29,13 +29,11 @@
 
 ## Continuous Integration
 
-Сборка настроена для Linux и Windows:
+Сборка настроена в GitHub Actions для Linux и Windows:
 
 - Linux: `gcc`, `clang`
 - Windows: MSVC
 
-Конфигурационные файлы:
+Конфигурационный файл:
 
 - [GitHub Actions](.github/workflows/cicd.yml)
-- [Travis CI](.travis.yml)
-- [AppVeyor](appveyor.yml)

@@ -30,7 +30,7 @@ jobs:
             executable_suffix: ".exe"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Configure Linux
         if: runner.os == 'Linux'
